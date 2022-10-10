@@ -134,10 +134,10 @@ def back(img_no):
 	button_back.grid(row=5, column=0)
 	button_exit.grid(row=5, column=1)
 	button_forward.grid(row=5, column=2)
-	button_bikni.grid(row=10, column=0)
-	button_other.grid(row=10, column=1)
-	button_sexyselfie.grid(row=10, column=2)
-	button_porn.grid(row=10, column=3)
+	button_bikni.grid(row=7, column=0)
+	button_other.grid(row=7, column=1)
+	button_sexyselfie.grid(row=7, column=2)
+	button_porn.grid(row=7, column=3)
 	
  
  

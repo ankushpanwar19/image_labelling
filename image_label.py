@@ -4,9 +4,9 @@ from PIL import ImageTk, Image
 from utils import load_image_paths,open_image_tnkr
 import time
 
-dir = 'test/porn'
-default_label = 'porn'
-file_save = "porn_labels.csv"
+dir = 'test/other'
+default_label = 'other'
+file_save = "other_labels.csv"
 width,height = 250,250
 file_writer = open(file_save,'a')
 

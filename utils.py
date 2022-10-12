@@ -14,7 +14,7 @@ def open_image_tnkr(image_path,width,height):
 def load_image_paths(dir,csv_path):
 
 	img_paths = sorted(glob(os.path.join(dir,"*")))
-
+	total_imgs = len(img_paths)
 	if os.path.exists(csv_path):
 		try:
 			already_existing = pd.read_csv(csv_path,header=None)
@@ -31,6 +31,8 @@ def load_image_paths(dir,csv_path):
 	if len(img_paths)<1:
 		print("ALL Done")
 		sys.exit()
+	no_labelled_img = len(already_existing)
+	print(f"Already labelled images:{no_labelled_img}/{total_imgs}")
 	return img_paths
 	
 
